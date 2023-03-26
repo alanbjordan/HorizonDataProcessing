@@ -18,7 +18,7 @@ with tqdm(total=100, desc="Loading CSV file") as pbar:
 #Creating a pandas dataframe from the csv data
 df = pd.concat(df_chunks, axis=0)
 
-# Replace columns and filter data
+# Encoding Data | Dropping Unwanted Columns | Renaming Columns
 df = df.drop(columns=['Area','E-Mail Sent','Time to\nrespond','for\ncalc','Inq\nDate','Inq\nPROP','A\nA/C','CONTACT'])
 df = df.rename(columns={'Building Name':'Building_Name','Client Name':'Client_Name','Inquiry Date':'Inquiry_Date'})
 df['Price'] = df['Price'].str.replace(',','').fillna(0).astype(int)
