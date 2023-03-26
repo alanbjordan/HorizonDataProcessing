@@ -1,3 +1,3 @@
 # Horizon Data Processing
 
-This tool is designed to filter rental client inquiries in a spreadsheet and identify the ones that have a higher probability of closing on a contract. By applying custom criteria and data analysis, the program extracts the most promising leads for property owners and real estate agents.
+This application filters a spreadsheet containing inquiries from potential rental clients and selects only those who are more likely to sign a contract. The resulting data is extracted and saved to a dataframe, which is then exported and uploaded to the client's Google Drive folder for daily reporting purposes.
